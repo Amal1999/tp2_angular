@@ -1,0 +1,13 @@
+<p ngClass="m-5">Exercice 3</p>
+<div ngClass="row d-flex justify-content-center">
+  <div ngClass="col-5">
+    <app-list-component [listCvs]="listCv" (sendCv)="onCvRecieve($event)"></app-list-component>
+  </div>
+  <div ngClass="col-6">
+
+      <app-cv-details *ngIf="selectedCv" [cv]="selectedCv"></app-cv-details>
+
+  </div>
+</div>
+
+<app-cv-embauches></app-cv-embauches>

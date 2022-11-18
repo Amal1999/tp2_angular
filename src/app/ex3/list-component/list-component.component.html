@@ -1,0 +1,5 @@
+<div *ngFor="let cv of listCvs">
+
+  <app-cv-item [cv] = "cv" (sendCv)="onCvRecieve($event)"></app-cv-item>
+
+</div>

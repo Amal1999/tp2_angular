@@ -1,0 +1,70 @@
+<div ngClass="col-5">
+  <div ngClass="card-container">
+    <div ngClass="card">
+      <div ngClass="front">
+        <div ngClass="cover" [ngStyle]="{'background-color':'rgb(143, 85, 250)'}">
+        </div>
+        <div ngClass="user">
+          <img ngClass="img-circle" [src]="cv.path | defaultImage"/>
+        </div>
+        <div ngClass="content">
+          <div ngClass="main">
+            <h3 ngClass="name">{{cv.firstname}} {{cv.name}}</h3>
+            <p ngClass="profession">{{cv.Job}}</p>
+
+            <p ngClass="text-center">{{cv.Age}}</p>
+          </div>
+          <div ngClass="footer mb-3">
+            <div ngClass="rating">
+              <i ngClass="fa fa-mail-forward"></i>
+              Rotation automatique
+
+            </div>
+          </div>
+        </div>
+      </div> <!-- end front panel -->
+      <div ngClass="back">
+        <div ngClass="header">
+          <h5 ngClass="motto">"To be or not to be, this is my awesome motto!"</h5>
+        </div>
+        <div ngClass="content">
+          <div ngClass="main">
+            <h4 ngClass="text-center">Job Description</h4>
+            <p ngClass="text-center mb-1">{{cv.description}}</p>
+            <p ngClass="text-center" [ngStyle]="{'color' : 'grey'}">keywords</p>
+
+            <div ngClass="stats-container">
+              <div ngClass="stats">
+                <h4>235</h4>
+                <p>
+                  Followers
+                </p>
+              </div>
+              <div ngClass="stats">
+                <h4>114</h4>
+                <p>
+                  Following
+                </p>
+              </div>
+              <div ngClass="stats">
+                <h4>35</h4>
+                <p>
+                  Projects
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <br>
+
+        </div>
+          <div ngClass="footer">
+
+            <button ngClass="btn btn-primary" (click)="onClickEmbauche()"> Embaucher </button>
+          </div>
+
+
+      </div> <!-- end back panel -->
+    </div>
+  </div>
+</div>

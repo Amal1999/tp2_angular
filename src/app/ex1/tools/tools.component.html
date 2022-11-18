@@ -1,0 +1,18 @@
+<div class="container">
+<div class="row">
+  <div class="mb-3 col-3">
+    <input type="text" class="form-control" [(ngModel)]="color" (change) = "onChangeColor()" id="color" placeholder="Exemple : red">
+  </div>
+  <div class="mb-3 col-3">
+    <input type="number" [(ngModel)]="size" class="form-control" (change) = "onChangeSize()"  id="size" placeholder="Exemple : 12">
+  </div>
+  <div class="mb-3 col-3">
+  <select [(ngModel)]="font" class="form-select" (change) = "onChangeFont()"  aria-label="Default select example">
+    <option selected value="">Open this select menu</option>
+    <option style="font-family:Arial" value="Arial">Arial</option>
+    <option style="font-family:Verdana" value="Verdana">Verdana</option>
+    <option style="font-family:Algerian" value="Algerian">Algerian</option>
+  </select>
+  </div>
+</div>
+</div>

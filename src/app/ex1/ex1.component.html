@@ -1,0 +1,16 @@
+
+<p class="m-5"  [ngStyle]="{'color' : color,'font-family' : font, 'font-size' : size+'px'}">
+  Exercice 1 <br>
+
+  Bonjour ce paragraphe va être modifié selon
+  les paramétres passés dans le form ci-dessous.
+  C'est une simulation d'un mini Word.
+  Essayez-la dès maintenant ! :)
+</p>
+<app-tools
+(emitterColor)="getColor($event)"
+(emitterSize)="getSize($event)"
+(emitterFont)="getFont($event)"
+>
+</app-tools>
+

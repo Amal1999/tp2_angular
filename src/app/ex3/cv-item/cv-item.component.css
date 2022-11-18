@@ -1,0 +1,8 @@
+.card-btn :hover
+{
+  cursor : pointer;
+}
+.card-btn
+ {
+  text-align: center;
+ }

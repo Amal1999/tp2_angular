@@ -1,0 +1,12 @@
+<h3 class="m-5">Liste des personnes embauchées</h3>
+<div class="row flex-wrap m-5" >
+
+    <div *ngFor="let cv of cvEmbauches" ngClass="col-3 m-1 card" [ngStyle]="{'border':'1px solid green','border-radius':'0px'}">
+      <div ngClass="card-body">
+        <img [src] ="cv.path | defaultImage" [ngStyle]="{'width': '60px', 'height' : '60px'}" >
+        <span ngClass="text-center" [ngStyle]="{'padding-left': '20px'}">  {{cv.name}} {{cv.firstname}} </span>
+    </div>
+    </div>
+
+  </div>
+
