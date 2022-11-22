@@ -5,12 +5,13 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class DefaultImagePipe implements PipeTransform {
 
-  transform(value: String, ...args: unknown[]): any
+  defaultImage : String = "./assets/images/default.jpg";
+  transform(value: String): String
    {
-    if(value.replace(/\s/g, '').length == 0 )
-    return "./assets/images/demon.jpg"
+    if(value.trim().length == 0 )
+    return this.defaultImage
     else
-    return value  
+    return value
   }
 
 }

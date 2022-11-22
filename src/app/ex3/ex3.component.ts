@@ -12,7 +12,7 @@ export class Ex3Component implements OnInit {
   listCv: Cv[] = [];
 
   constructor(private cvService : CvService) {
-    this.listCv = cvService.listCv;
+    this.listCv = cvService.getCvs();
   }
 
   ngOnInit(): void {

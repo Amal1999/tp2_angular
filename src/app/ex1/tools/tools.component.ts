@@ -21,8 +21,6 @@ export class ToolsComponent implements OnInit {
   }
 
   onChangeColor(){
-    console.log("hellooo");
-
     this.emitterColor.emit(this.color);
   }
   onChangeSize(){

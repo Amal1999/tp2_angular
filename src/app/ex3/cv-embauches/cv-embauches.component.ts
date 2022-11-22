@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { Cv } from '../models/cv';
 import { EmbaucheService } from '../services/embauche.service';
 
@@ -11,16 +12,12 @@ export class CvEmbauchesComponent implements OnInit {
 
   cvEmbauches : Cv[] = [];
 
-  constructor( private embaucheService: EmbaucheService ) {
+  constructor( private embaucheService: EmbaucheService) {
 
-    this.cvEmbauches = embaucheService.cvEmbauches;
-    
+    this.cvEmbauches = embaucheService.getCvEmbauches();
+
    }
 
   ngOnInit(): void {
-  }
-
-  addEmbauche(cv : Cv){
-    this.embaucheService.addEmbauche(cv);
   }
 }

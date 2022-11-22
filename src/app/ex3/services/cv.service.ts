@@ -6,7 +6,7 @@ import { Cv } from '../models/cv';
 })
 export class CvService {
 
-  listCv : Cv[] = [
+  private listCv : Cv[] = [
     new Cv(
       'D1111111',
       'Achour',
@@ -37,6 +37,20 @@ export class CvService {
       './assets/images/jujutsu.jpg',
       "I am an enthusiastic, self-motivated, reliable, responsible and hard working person."
     ),
+    new Cv(
+      'D3333333',
+      'anonyme 2',
+      '',
+      25,
+      '33333333',
+      'Etudiante',
+      '',
+      "I am an enthusiastic, self-motivated, reliable, responsible and hard working person."
+    ),
   ];
   constructor() { }
+
+  getCvs () : Cv[]{
+    return this.listCv;
+  }
 }
